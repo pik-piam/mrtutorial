@@ -6,8 +6,7 @@ R package **mrtutorial**, version **0.2.0**
 
 ## Purpose and Functionality
 
-Provides tutorial md and example functiosn of mr world.
-
+An example library of the mr- world packages, for additional information please see https://github.com/magpiemodel/tutorials/tree/master/madrat
 
 ## Installation
 
