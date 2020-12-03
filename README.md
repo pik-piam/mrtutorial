@@ -1,12 +1,13 @@
 # Tutorial Package For Madrat Package Library
 
-R package **mrtutorial**, version **0.2.0**
+R package **mrtutorial**, version **0.2.2**
 
   
 
 ## Purpose and Functionality
 
-An example library of the mr- world packages, for additional information please see https://github.com/magpiemodel/tutorials/tree/master/madrat
+Example package of mr- world libraries, in conjunction with MAgPIE MADRat tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat .
+
 
 ## Installation
 
@@ -38,7 +39,7 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 To cite package **mrtutorial** in publications use:
 
 Chen D (2020). _mrtutorial: Tutorial Package For Madrat Package
-Library_. R package version 0.2.0.
+Library_. R package version 0.2.2.
 
 A BibTeX entry for LaTeX users is
 
@@ -47,7 +48,7 @@ A BibTeX entry for LaTeX users is
   title = {mrtutorial: Tutorial Package For Madrat Package Library},
   author = {David Meng-Chuen Chen},
   year = {2020},
-  note = {R package version 0.2.0},
+  note = {R package version 0.2.2},
 }
 ```
 
