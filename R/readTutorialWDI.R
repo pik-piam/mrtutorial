@@ -29,5 +29,8 @@ readTutorialWDI<-function(subtype){
   wdi <- as.magpie(melt(wdi,id.vars = c("iso2c","year")),
                    spatial=1,temporal=2,tidy=TRUE,replacement =".")
   wdi <- wdi[,,subtype]
+
+  getNames(wdi) <- gsub("\\.", "_", getNames(wdi)) ## Replace . with _
+
   return(wdi)
 }

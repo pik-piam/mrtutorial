@@ -19,6 +19,10 @@ calcAgGDP <- function(){
 
   x <- ag_gdp/gdp
   x <- collapseNames(x)
+  getNames(x) <- "Ag_GDP_share"
+
+  ## some division by 0 happening
+  x[is.na(x)] <- 0
 
   return(list(
     x=x,

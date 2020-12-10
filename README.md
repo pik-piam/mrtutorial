@@ -38,8 +38,8 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 
 To cite package **mrtutorial** in publications use:
 
-Chen D (2020). _mrtutorial: Tutorial Package For Madrat Package
-Library_. R package version 0.2.2.
+Chen D (2020). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version
+0.2.2.
 
 A BibTeX entry for LaTeX users is
 
