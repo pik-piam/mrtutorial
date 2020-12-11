@@ -1,8 +1,8 @@
 Package: mrtutorial
 Type: Package
 Title: Tutorial Package For Madrat Package Library
-Date: 2020-12-10
-Version: 0.2.2
+Date: 2020-12-11
+Version: 0.2.3
 Authors@R: 
     person("David Meng-Chuen",  "Chen", email = "david.chen@pik-potsdam.de", role = c("aut","cre"))
 Description: Example package of mr- world libraries, in conjunction with MAgPIE MADRat tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat .

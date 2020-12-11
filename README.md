@@ -1,6 +1,6 @@
 # Tutorial Package For Madrat Package Library
 
-R package **mrtutorial**, version **0.2.2**
+R package **mrtutorial**, version **0.2.3**
 
   
 
@@ -39,7 +39,7 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 To cite package **mrtutorial** in publications use:
 
 Chen D (2020). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version
-0.2.2.
+0.2.3.
 
 A BibTeX entry for LaTeX users is
 
@@ -48,7 +48,7 @@ A BibTeX entry for LaTeX users is
   title = {mrtutorial: Tutorial Package For Madrat Package Library},
   author = {David Meng-Chuen Chen},
   year = {2020},
-  note = {R package version 0.2.2},
+  note = {R package version 0.2.3},
 }
 ```
 
