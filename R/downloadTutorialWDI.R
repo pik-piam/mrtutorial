@@ -1,13 +1,12 @@
 #' Dowload WDI
 #'
 #' Download WDI (World development indicators) data .rda file.
-#' the WDI data is updated with the funciton "WDISearch(cache=WDIcache())"
 #'
 #' @author  David Chen
 #' @seealso  \code{\link{downloadSource}} \code{\link{WDI}}
 #' @examples
 #'
-#' \dontrun{ a <- downloadSource(type="WDI")
+#' \dontrun{ a <- downloadSource(type="TutorialWDI")
 #' }
 #'
 #' @importFrom WDI WDI WDIcache WDIsearch
