@@ -8,11 +8,10 @@ downloadTutorialWDI()
 }
 \description{
 Download WDI (World development indicators) data .rda file.
-the WDI data is updated with the funciton "WDISearch(cache=WDIcache())"
 }
 \examples{
 
-\dontrun{ a <- downloadSource(type="WDI")
+\dontrun{ a <- downloadSource(type="TutorialWDI")
 }
 
 }
