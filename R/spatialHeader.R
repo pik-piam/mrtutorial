@@ -1,4 +1,4 @@
-#' Tool: spatial_header
+#' Tool: spatialHeader
 #'
 #' Given a regionmapping (mapping between ISO countries and regions) the
 #' function calculates a 0.5 degree spatial header for 0.5 degree magclass
@@ -8,18 +8,17 @@
 #' data.frame.
 #' @return A vector with 59199 elements
 #' @author Jan Philipp Dietrich
-#' @export
 #' @seealso \code{\link{regionscode}}
 #' @examples
-#'
 #' \dontrun{
-#' spatial_header("regionmappingMAgPIE.csv")
+#' spatialHeader("regionmappingMAgPIE.csv")
 #' }
+#' @importFrom utils read.csv
 
-spatial_header <- function(mapping) {
-  if(is.character(mapping)) {
+spatialHeader <- function(mapping) {
+  if (is.character(mapping)) {
     map <- read.csv(mapping, sep = ";")
-  } else if(is.data.frame(mapping)) {
+  } else if (is.data.frame(mapping)) {
     map <- mapping
   } else {
     stop("Mapping is provided in an unsupported format. It should be either a character or a data.frame!")
@@ -28,7 +27,6 @@ spatial_header <- function(mapping) {
   reg <- as.character(map$RegionCode)
   names(reg) <- as.character(map$CountryCode)
   iso <- toolGetMapping(type = "cell", name = "CountryToCellMapping.csv")$iso
-  spatial_header <- paste(reg[iso], 1:length(iso),
-                          sep = ".")
-  return(spatial_header)
+  spatialHeader <- paste(reg[iso], seq_along(iso), sep = ".")
+  return(spatialHeader)
 }

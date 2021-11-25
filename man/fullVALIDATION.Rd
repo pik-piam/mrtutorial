@@ -7,21 +7,18 @@
 fullVALIDATION(rev = 0.1)
 }
 \arguments{
-\item{rev}{data revision which should be used as input (positive numeric).
-\code{\link{setConfig}} (e.g. for setting the mainfolder if not already set
-properly).}
+\item{rev}{data revision which should be used as input (positive numeric).}
 }
 \description{
 Function that produces the complete validation data set used for evaluation of MAgPIE outputs
 }
 \examples{
-
 \dontrun{
 retrieveData("VALIDATION")
 }
 }
 \seealso{
-\code{\link{readSource}},\code{\link{getCalculations}},\code{\link{calcOutput}},\code{\link{setConfig}}
+\code{\link{readSource}}, \code{\link{getCalculations}}, \code{\link{calcOutput}}
 }
 \author{
 Jan Philipp Dietrich, Kristine Karstens

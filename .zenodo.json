@@ -1,6 +1,6 @@
 {
   "title": "mrtutorial: Tutorial Package For Madrat Package Library",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "<p>Example package of mr- world libraries, in conjunction with MAgPIE MADRat tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat .<\/p>",
   "creators": [
     {

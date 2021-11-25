@@ -1,8 +1,8 @@
 # Tutorial Package For Madrat Package Library
 
-R package **mrtutorial**, version **0.2.4**
+R package **mrtutorial**, version **0.2.5**
 
-[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial)    
+[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial)  [![R build status](https://github.com/pik-piam/mrtutorial/workflows/check/badge.svg)](https://github.com/pik-piam/mrtutorial/actions) [![codecov](https://codecov.io/gh/pik-piam/mrtutorial/branch/master/graph/badge.svg)](https://codecov.io/gh/pik-piam/mrtutorial) [![r-universe](https://pik-piam.r-universe.dev/badges/mrtutorial)](https://pik-piam.r-universe.dev/ui#builds)
 
 ## Purpose and Functionality
 
@@ -38,7 +38,7 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 
 To cite package **mrtutorial** in publications use:
 
-Chen D (2021). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version 0.2.4.
+Chen D (2021). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version 0.2.5.
 
 A BibTeX entry for LaTeX users is
 
@@ -47,7 +47,6 @@ A BibTeX entry for LaTeX users is
   title = {mrtutorial: Tutorial Package For Madrat Package Library},
   author = {David Meng-Chuen Chen},
   year = {2021},
-  note = {R package version 0.2.4},
+  note = {R package version 0.2.5},
 }
 ```
-

@@ -1,8 +1,8 @@
 Package: mrtutorial
 Type: Package
 Title: Tutorial Package For Madrat Package Library
-Date: 2021-05-02
-Version: 0.2.4
+Date: 2021-11-25
+Version: 0.2.5
 Authors@R: 
     person("David Meng-Chuen",  "Chen", email = "david.chen@pik-potsdam.de", role = c("aut","cre"))
 Description: Example package of mr- world libraries, in conjunction with MAgPIE MADRat tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat .
@@ -14,10 +14,12 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Imports:
     WDI,
     countrycode,
     lucode2,
     reshape2,
     magpiesets
+Suggests: 
+    covr
