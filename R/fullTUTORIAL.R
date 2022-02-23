@@ -4,34 +4,34 @@
 #' MAgPIE model.
 #'
 #' @param rev data revision which should be used as input (positive numeric).
-#' @author Jan Philipp Dietrich, Benjamin Leon Bodirsky, Florian Humpenoeder
+#' @param dev dev flag for testing
+#' @param extra extra text to insert
+#' @author David M Chen
 #' @seealso
 #' \code{\link{readSource}}, \code{\link{getCalculations}}, \code{\link{calcOutput}}
 #' @examples
 #' \dontrun{
-#' fullMAgPIE(revision = 12, mainfolder = "pathtowhereallfilesarestored")
+#' retrieveData("tutorial", revision = 12, mainfolder = "pathtowhereallfilesarestored")
 #' }
 #' @importFrom magpiesets findset
 #' @importFrom madrat toolGetMapping
 
-fullTUTORIAL <- function(rev = 0.1) {
+fullTUTORIAL <- function(rev = 1, dev = "", extra = "Example Argument") {
 
-  magYears <- findset("time")
+  # ATTENTION: name of the model in function name must be in capital letters!
 
-  cellsregions <- function(reg_revision = 0) { # nolint
-    # function which calculates the name vector for spatial 0.5 degree MAgPIE data sets
-    # containing MAgPIE cell number and corresponding region
-    map <- toolGetMapping(type = "regional", name = getConfig("regionmapping"))
-    regionscode <- regionscode(map)
-    spatial_header <- spatialHeader(map) # nolint
-    save(spatial_header, regionscode, map, reg_revision, file = "spatial_header.rda", compress = "xz")
+  "!# @pucArguments extra"
+
+  writeLines(extra, "include_extra_text.txt")
+
+  if (rev >= 1) {
+  # Ag GDP
+  calcOutput("AgGDP", round = 3, file = "fTUTORIAL_ag_gdp.csv")
   }
-  cellsregions(rev)
-
-  # data fully agrees with the data currently used in MAgPIE and new data set is implemented
-  calcOutput("TauTotal",  years = 1995, round = 2, file = "fm_tau1995.cs4")
-
-  # 09 drivers - Ag GDP
-  calcOutput("AgGDP", aggregate = FALSE, years = magYears, round = 3, file = "fTUTORIAL_ag_gdp.csv")
-
+  if (dev == "test") {
+    message("Here you could execute code for a hypothetical development version called \"test\"")
+  }
+  # return is optional, tag is appended to the tgz filename, pucTag is appended to the puc filename
+  return(list(tag = "customizable_tag",
+              pucTag = "tag"))
 }

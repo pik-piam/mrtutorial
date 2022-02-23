@@ -4,10 +4,14 @@
 \alias{fullTUTORIAL}
 \title{fullMAgPIE}
 \usage{
-fullTUTORIAL(rev = 0.1)
+fullTUTORIAL(rev = 1, dev = "", extra = "Example Argument")
 }
 \arguments{
 \item{rev}{data revision which should be used as input (positive numeric).}
+
+\item{dev}{dev flag for testing}
+
+\item{extra}{extra text to insert}
 }
 \description{
 Function that produces the complete regional data set required for running the
@@ -15,12 +19,12 @@ MAgPIE model.
 }
 \examples{
 \dontrun{
-fullMAgPIE(revision = 12, mainfolder = "pathtowhereallfilesarestored")
+retrieveData("tutorial", revision = 12, mainfolder = "pathtowhereallfilesarestored")
 }
 }
 \seealso{
 \code{\link{readSource}}, \code{\link{getCalculations}}, \code{\link{calcOutput}}
 }
 \author{
-Jan Philipp Dietrich, Benjamin Leon Bodirsky, Florian Humpenoeder
+David M Chen
 }

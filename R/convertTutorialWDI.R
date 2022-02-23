@@ -21,7 +21,13 @@ convertTutorialWDI<-function(x,subtype){
   WDI_data <- WDI::WDI_data
 
   # changing scale of indicators
-  if (subtype %in% c("SP.POP.TOTL","NY.GDP.MKTP.PP.KD", "NV.AGR.TOTL.CD", "NY.GDP.MKTP.PP.CD","NY.GDP.MKTP.CD","NY.GDP.MKTP.KD","NY.GDP.MKTP.KN")) {
+  if (subtype %in% c("SP.POP.TOTL",
+                     "NY.GDP.MKTP.PP.KD", 
+                     "NV.AGR.TOTL.CD", 
+                     "NY.GDP.MKTP.PP.CD",
+                     "NY.GDP.MKTP.CD",
+                     "NY.GDP.MKTP.KD",
+                     "NY.GDP.MKTP.KN")) {
     x <- x/1000000
 
 #Kosovo added to Serbia
@@ -47,6 +53,7 @@ convertTutorialWDI<-function(x,subtype){
   y<-toolCountryFill(y,fill = 0)
   y[is.na(y)]<-0
   y <- y[,sort(getYears(y)),]
+  
   #remove years which only contain 0s as entries
   y <- y[,!apply(y,2,function(x) return(all(x==0))),]
 
