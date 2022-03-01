@@ -28,6 +28,6 @@ fullVALIDATION <- function(rev = 0.1) {
 
   # Add your validation scripts here
   calcOutput(type = "ValidPopulation", datasource = "WDI", aggregate = "REG+GLO",
-             file = valfile, append = TRUE, na_warning = FALSE, try = TRUE)
+             file = valfile, append = TRUE, warnNA = FALSE, try = TRUE)
 
 }
