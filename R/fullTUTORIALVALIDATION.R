@@ -21,13 +21,10 @@ fullTUTORIALVALIDATION <- function(rev = 0.1) {
   # Please put the validation.mif into your output folder.
   # Use retrieveData("VALIDATION") to create a .tgz
 
-  file.copy(lucode2::path(paste0(getConfig("mainfolder"), "/output/"), "validation.mif"),
-            lucode2::path(getConfig("outputfolder"), "validation.mif"))
-
   valfile <- "validation.mif"
 
   # Add your validation scripts here
   calcOutput(type = "ValidPopulation", datasource = "WDI", aggregate = "REG+GLO",
-             file = valfile, append = TRUE, na_warning = FALSE, try = TRUE)
+             file = valfile, append = TRUE, warnNA = FALSE, try = TRUE)
 
 }
