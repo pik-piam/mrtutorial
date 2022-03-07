@@ -8,14 +8,11 @@ readTutorialWDI(subtype)
 }
 \arguments{
 \item{subtype}{Type of WDI data that should be read. Please use the
-worldbank indicator abbreviation. Available types are e.g.: \itemize{ \item
-\code{SP.POP.TOTL}: Population, total \item \code{NY.GDP.MKTP.PP.KD}: GDP,
-PPP (constant 2011 international Dollar) \item \code{NY.GDP.MKTP.PP.CD}:
-GDP, PPP (current international Dollar) \item \code{NY.GDP.MKTP.CD}: GDP MER
-(current USDollar) \item \code{NY.GDP.MKTP.KD}: GDP MER (constant 2005
-USDollar) \item \code{NY.GDP.MKTP.KN}: GDP LCU (constant LCU)
-\item \code{SP.URB.TOTL.IN.ZS}: Urban population (peccentage of total)
-\item \code{ NV.AGR.TOTL.CD}: GDP (current USD)}}
+worldbank indicator abbreviation. Available types are e.g.: \itemize{
+\item \code{SP.POP.TOTL}: Population, total
+\item \code{NY.GDP.MKTP.PP.CD}: GDP, PPP (current international Dollar)
+\item \code{SL.AGR.EMPL.ZS}: Employment in agriculture as \% of total employment
+\item \code{NV.AGR.TOTL.CD}: Agricultural GDP (current international Dollar) }}
 }
 \value{
 magpie object of the WDI data

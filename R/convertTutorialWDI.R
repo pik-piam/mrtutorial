@@ -17,46 +17,28 @@
 #' @importFrom madrat toolCountryFill
 
 
-convertTutorialWDI<-function(x,subtype){
-  WDI_data <- WDI::WDI_data
+convertTutorialWDI<-function(x, subtype){
 
-  # changing scale of indicators
-  if (subtype %in% c("SP.POP.TOTL",
-                     "NY.GDP.MKTP.PP.KD", 
-                     "NV.AGR.TOTL.CD", 
-                     "NY.GDP.MKTP.PP.CD",
-                     "NY.GDP.MKTP.CD",
-                     "NY.GDP.MKTP.KD",
-                     "NY.GDP.MKTP.KN")) {
-    x <- x/1000000
+  # change scale of absolute indicators, MAgPIE runs in Million scale for Pop and GDP drivers
+if (subtype %in% c("NY.GDP.MKTP.CD",
+                     "SP.POP.TOTL",
+                     "NV.AGR.TOTL.CD")){
 
-#Kosovo added to Serbia
-    x["RS",,] <- dimSums(x[c("RS","XK"),,],dim=1,na.rm=T)
-  }else if (subtype %in%  WDI_data$series[,"indicator"]){
+       out <- x/1e6 } else
 
-    vcat("Warning: Kosovo left out of conversion and has differing population values from FAO", verbosity=2)
-    x <- x
-  }else {
-    stop("subtype does not exist in the dataset!")
-  }
-  y <- x
+ if (subtype == "SL.AGR.EMPL.ZS"){
+        # don't change for percentage of ag employment
 
-## Channel Islands add to JEY
-  JG <- "JEY"
-  names(JG) <- "JG"
-  getCells(y)<-countrycode::countrycode(getCells(y),"iso2c","iso3c", custom_match = JG)
-  y<-y[!is.na(getCells(y)),,]
-  y<-clean_magpie(y)
+      out <- x } else{
 
-  y<-y["ANT",,,invert=TRUE]
+      stop("subtype does not exist in the dataset!")}
 
-  y<-toolCountryFill(y,fill = 0)
-  y[is.na(y)]<-0
-  y <- y[,sort(getYears(y)),]
-  
-  #remove years which only contain 0s as entries
-  y <- y[,!apply(y,2,function(x) return(all(x==0))),]
+  # toolCountryFill fills in missing countries - 249 required for aggregation
 
-  y<-y[,sort(getYears(y)),]
-  return(y)
+  x<-toolCountryFill(out,fill = 0)
+
+  x[is.na(x)] <- 0  #remove NAs
+
+
+  return(x)
 }

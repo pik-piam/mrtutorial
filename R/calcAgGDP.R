@@ -15,6 +15,7 @@
 calcAgGDP <- function(){
 
   gdp <- readSource("TutorialWDI", subtype="NY.GDP.MKTP.CD")
+
   ag_gdp <- readSource("TutorialWDI", subtype="NV.AGR.TOTL.CD")
 
   x <- ag_gdp/gdp
@@ -24,9 +25,12 @@ calcAgGDP <- function(){
   ## some division by 0 happening
   x[is.na(x)] <- 0
 
+  #population weight
+  weight <- readSource("TutorialWDI", subtype = "SP.POP.TOTL")
+
   return(list(
     x=x,
-    weight=NULL,
+    weight=weight,
     unit="share",
     description="Ag GDP as percentage of total GDP"))
 }
