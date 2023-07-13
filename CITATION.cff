@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+type: software
+title: 'mrtutorial: Tutorial Package For Madrat Package Library'
+version: 0.2.10
+date-released: '2023-07-13'
+abstract: 'Example package of mr- world libraries, in conjunction with MAgPIE MADRat
+  tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat
+  .'
+authors:
+- family-names: Chen
+  given-names: David Meng-Chuen
+  email: david.chen@pik-potsdam.de
+license: GPL-3.0
+

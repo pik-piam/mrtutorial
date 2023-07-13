@@ -26,7 +26,7 @@ spatialHeader <- function(mapping) {
   regionscode <- regionscode(map)
   reg <- as.character(map$RegionCode)
   names(reg) <- as.character(map$CountryCode)
-  iso <- toolGetMapping(type = "cell", name = "CountryToCellMapping.csv")$iso
+  iso <- toolGetMapping(type = "cell", name = "CountryToCellMapping.csv", where = "mappingfolder")$iso
   spatialHeader <- paste(reg[iso], seq_along(iso), sep = ".")
   return(spatialHeader)
 }
