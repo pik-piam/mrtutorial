@@ -19,7 +19,6 @@ Imports:
     dplyr,
     lucode2,
     magpiesets,
-    reshape2,
     rlang,
     tidyr
 Suggests: 
