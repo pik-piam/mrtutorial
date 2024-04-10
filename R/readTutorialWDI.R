@@ -22,20 +22,22 @@
 #' @importFrom magclass as.magpie
 #' @importFrom rlang .data
 
-readTutorialWDI<-function(subtype){
+readTutorialWDI<-function(subtype = "SP.POP.TOTL"){
 
   load("WDI.rda")
 
-  #convert the iso2c to iso3c using madrat tool
-  wdi$iso2c <- toolCountry2isocode(wdi$iso2c)
-
+  #clean up: remove other country ids, remove rows with NAs as country,
+             #pivot to long format and convert to magclass object
   wdi <- wdi %>%
-         dplyr::select(!.data$country)  %>%
-         filter(!is.na(.data$iso2c)) %>%
-         pivot_longer(cols=3:6) %>%
+         dplyr::select(!c(.data$country, .data$iso2c))  %>%
+         filter(!is.na(.data$iso3c), .data$iso3c != "") %>%
+         pivot_longer(cols = c("NY.GDP.MKTP.CD", "SP.POP.TOTL",
+                               "SL.AGR.EMPL.ZS", "NV.AGR.TOTL.CD"),
+                      names_to = "variable") %>%
          as.magpie(spatial = 1, temporal = 2, replacement =".")
 
-  wdi <- wdi[,,subtype]
+  #select the subtype
+  wdi <- wdi[, , subtype]
 
   getNames(wdi) <- gsub("\\.", "_", getNames(wdi))
   # Replacement of . with _ in dimension is also done automatically in as.magpie()

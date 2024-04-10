@@ -19,12 +19,13 @@ downloadTutorialWDI<-function(){
                  "NV.AGR.TOTL.CD") # Ag GDP current US$
   wdi <- WDI(indicator = indicator,start= 1960, end = 2018)
   save(wdi,file = paste("WDI","rda",sep="."))
-  
+
   return(list(url           = "https://data.worldbank.org/indicator/",
               doi           = NULL,
               title         = "World Bank Development Indicators",
               description   = "GDP and Population indicators",
               author        = NULL,
+              license      = NULL,
               unit          = NULL))
-  
+
 }

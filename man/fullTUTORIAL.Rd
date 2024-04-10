@@ -4,10 +4,10 @@
 \alias{fullTUTORIAL}
 \title{fullMAgPIE}
 \usage{
-fullTUTORIAL(rev = 1, dev = "", extra = "Example Argument")
+fullTUTORIAL(rev = numeric_version("1"), dev = "", extra = "Example Argument")
 }
 \arguments{
-\item{rev}{data revision which should be used as input (positive numeric).}
+\item{rev}{data revision which should be used as input (numeric_version).}
 
 \item{dev}{dev flag for testing}
 
@@ -19,7 +19,8 @@ MAgPIE model.
 }
 \examples{
 \dontrun{
-retrieveData("tutorial", revision = 12, mainfolder = "pathtowhereallfilesarestored")
+retrieveData("tutorial", rev = numeric_version("12"),
+             mainfolder = "pathtowhereallfilesarestored")
 }
 }
 \seealso{

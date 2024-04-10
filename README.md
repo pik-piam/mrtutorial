@@ -1,12 +1,14 @@
 # Tutorial Package For Madrat Package Library
 
-R package **mrtutorial**, version **0.2.10**
+R package **mrtutorial**, version **0.2.11**
 
-[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial)  [![R build status](https://github.com/whitehacker/mrtutorial/workflows/check/badge.svg)](https://github.com/whitehacker/mrtutorial/actions) [![codecov](https://codecov.io/gh/whitehacker/mrtutorial/branch/master/graph/badge.svg)](https://app.codecov.io/gh/whitehacker/mrtutorial) [![r-universe](https://pik-piam.r-universe.dev/badges/mrtutorial)](https://pik-piam.r-universe.dev/builds)
+[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial)  [![R build status](https://github.com/caviddhen/mrtutorial/workflows/check/badge.svg)](https://github.com/caviddhen/mrtutorial/actions) [![codecov](https://codecov.io/gh/caviddhen/mrtutorial/branch/master/graph/badge.svg)](https://app.codecov.io/gh/caviddhen/mrtutorial) [![r-universe](https://pik-piam.r-universe.dev/badges/mrtutorial)](https://pik-piam.r-universe.dev/builds)
 
 ## Purpose and Functionality
 
-Example package of mr- world libraries, in conjunction with MAgPIE MADRat tutorial. For more information please see: https://github.com/magpiemodel/tutorials/tree/master/madrat .
+Example package of mr- world libraries, in conjunction with
+    MAgPIE MADRat tutorial. For more information please see:
+    https://github.com/magpiemodel/tutorials/tree/master/madrat .
 
 
 ## Installation
@@ -38,7 +40,7 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 
 To cite package **mrtutorial** in publications use:
 
-Chen D (2023). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version 0.2.10.
+Chen D (2024). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version 0.2.11.
 
 A BibTeX entry for LaTeX users is
 
@@ -46,7 +48,7 @@ A BibTeX entry for LaTeX users is
 @Manual{,
   title = {mrtutorial: Tutorial Package For Madrat Package Library},
   author = {David Meng-Chuen Chen},
-  year = {2023},
-  note = {R package version 0.2.10},
+  year = {2024},
+  note = {R package version 0.2.11},
 }
 ```
