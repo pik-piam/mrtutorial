@@ -1,8 +1,8 @@
 Type: Package
 Package: mrtutorial
 Title: Tutorial Package For Madrat Package Library
-Version: 0.2.10
-Date: 2023-07-13
+Version: 0.2.11
+Date: 2024-04-10
 Authors@R: 
     person("David Meng-Chuen", "Chen", , "david.chen@pik-potsdam.de", role = c("aut", "cre"))
 Description: Example package of mr- world libraries, in conjunction with

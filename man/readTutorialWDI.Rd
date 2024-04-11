@@ -4,7 +4,7 @@
 \alias{readTutorialWDI}
 \title{Read WDI}
 \usage{
-readTutorialWDI(subtype)
+readTutorialWDI(subtype = "SP.POP.TOTL")
 }
 \arguments{
 \item{subtype}{Type of WDI data that should be read. Please use the
