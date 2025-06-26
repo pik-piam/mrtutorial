@@ -8,14 +8,14 @@
 
 calcValidPopulation <- function(datasource="WDI") {
 
-  if(datasource=="WDI"){
-
+  if (datasource == "WDI") {
     out <- readSource("TutorialWDI", "SP.POP.TOTL")
+  } else {
+    stop("No datasource of the given name.")
+  }
 
-  } else { stop("No datasource of the given name.") }
-
-  getNames(out)                   <- "Population (million people)"
-  getSets(out,fulldim = FALSE)[3] <- "variable"
+  getNames(out)                    <- "Population (million people)"
+  getSets(out, fulldim = FALSE)[3] <- "variable"
 
   out <- add_dimension(out, dim=3.1, add="scenario", nm = "historical")
   out <- add_dimension(out, dim=3.2, add="model",    nm = datasource)

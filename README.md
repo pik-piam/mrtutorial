@@ -1,8 +1,8 @@
 # Tutorial Package For Madrat Package Library
 
-R package **mrtutorial**, version **0.2.11**
+R package **mrtutorial**, version **0.2.12**
 
-[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial)  [![R build status](https://github.com/caviddhen/mrtutorial/workflows/check/badge.svg)](https://github.com/caviddhen/mrtutorial/actions) [![codecov](https://codecov.io/gh/caviddhen/mrtutorial/branch/master/graph/badge.svg)](https://app.codecov.io/gh/caviddhen/mrtutorial) [![r-universe](https://pik-piam.r-universe.dev/badges/mrtutorial)](https://pik-piam.r-universe.dev/builds)
+[![CRAN status](https://www.r-pkg.org/badges/version/mrtutorial)](https://cran.r-project.org/package=mrtutorial) [![R build status](https://github.com/pik-piam/mrtutorial/workflows/check/badge.svg)](https://github.com/pik-piam/mrtutorial/actions) [![codecov](https://codecov.io/gh/pik-piam/mrtutorial/branch/master/graph/badge.svg)](https://app.codecov.io/gh/pik-piam/mrtutorial) [![r-universe](https://pik-piam.r-universe.dev/badges/mrtutorial)](https://pik-piam.r-universe.dev/builds)
 
 ## Purpose and Functionality
 
@@ -40,15 +40,16 @@ In case of questions / problems please contact David Meng-Chuen Chen <david.chen
 
 To cite package **mrtutorial** in publications use:
 
-Chen D (2024). _mrtutorial: Tutorial Package For Madrat Package Library_. R package version 0.2.11.
+Chen D (2025). "mrtutorial: Tutorial Package For Madrat Package Library." Version: 0.2.12.
 
 A BibTeX entry for LaTeX users is
 
  ```latex
-@Manual{,
+@Misc{,
   title = {mrtutorial: Tutorial Package For Madrat Package Library},
   author = {David Meng-Chuen Chen},
-  year = {2024},
-  note = {R package version 0.2.11},
+  date = {2025-06-26},
+  year = {2025},
+  note = {Version: 0.2.12},
 }
 ```

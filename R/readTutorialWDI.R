@@ -12,7 +12,7 @@
 #' \item \code{NV.AGR.TOTL.CD}: Agricultural GDP (current international Dollar) }
 #' @return magpie object of the WDI data
 #' @author David Chen
-#' @seealso \code{\link{readSource}} \code{\link{downloadTutorialWDI}}
+#' @seealso \code{\link[madrat]{readSource}} \code{\link{downloadTutorialWDI}}
 #' @examples
 #'
 #' \dontrun{ a <- readSource(type="WDI",subtype="SP.POP.TOTL")

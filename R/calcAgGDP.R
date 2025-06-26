@@ -18,7 +18,7 @@ calcAgGDP <- function(){
 
   ag_gdp <- readSource("TutorialWDI", subtype="NV.AGR.TOTL.CD")
 
-  x <- ag_gdp/gdp
+  x <- ag_gdp / gdp
   x <- collapseNames(x)
   getNames(x) <- "Ag_GDP_share"
 

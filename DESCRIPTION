@@ -1,8 +1,8 @@
 Type: Package
 Package: mrtutorial
 Title: Tutorial Package For Madrat Package Library
-Version: 0.2.11
-Date: 2024-04-10
+Version: 0.2.12
+Date: 2025-06-26
 Authors@R: 
     person("David Meng-Chuen", "Chen", , "david.chen@pik-potsdam.de", role = c("aut", "cre"))
 Description: Example package of mr- world libraries, in conjunction with
@@ -26,4 +26,4 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
