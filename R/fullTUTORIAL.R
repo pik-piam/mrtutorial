@@ -8,7 +8,7 @@
 #' @param extra extra text to insert
 #' @author David M Chen
 #' @seealso
-#' \code{\link{readSource}}, \code{\link{getCalculations}}, \code{\link{calcOutput}}
+#' \code{\link[madrat]{readSource}}, \code{\link[madrat]{getCalculations}}, \code{\link[madrat]{calcOutput}}
 #' @examples
 #' \dontrun{
 #' retrieveData("tutorial", rev = numeric_version("12"),

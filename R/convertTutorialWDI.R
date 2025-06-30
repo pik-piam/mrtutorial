@@ -17,28 +17,25 @@
 #' @importFrom madrat toolCountryFill
 
 
-convertTutorialWDI<-function(x, subtype){
+convertTutorialWDI <- function(x, subtype) {
 
   # change scale of absolute indicators, MAgPIE runs in Million scale for Pop and GDP drivers
-if (subtype %in% c("NY.GDP.MKTP.CD",
+  if (subtype %in% c("NY.GDP.MKTP.CD",
                      "SP.POP.TOTL",
-                     "NV.AGR.TOTL.CD")){
-
-       out <- x/1e6 } else
-
- if (subtype == "SL.AGR.EMPL.ZS"){
-        # don't change for percentage of ag employment
-
-      out <- x } else{
-
-      stop("subtype does not exist in the dataset!")}
+                     "NV.AGR.TOTL.CD")) {
+    out <- x/1e6
+  } else if (subtype == "SL.AGR.EMPL.ZS") {
+    # don't change for percentage of ag employment
+    out <- x
+  } else {
+    stop("subtype does not exist in the dataset!")
+  }
 
   # toolCountryFill fills in missing countries - 249 required for aggregation
+  x <- toolCountryFill(out, fill = 0)
 
-  x<-toolCountryFill(out,fill = 0)
-
-  x[is.na(x)] <- 0  #remove NAs
-
+  #remove NAs
+  x[is.na(x)] <- 0
 
   return(x)
 }

@@ -27,7 +27,7 @@ object.
 }
 }
 \seealso{
-\code{\link{readSource}} \code{\link{downloadTutorialWDI}}
+\code{\link[madrat]{readSource}} \code{\link{downloadTutorialWDI}}
 }
 \author{
 David Chen

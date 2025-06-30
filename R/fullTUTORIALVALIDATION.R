@@ -5,7 +5,7 @@
 #' @param rev data revision which should be used as input (positive numeric).
 #' @author Jan Philipp Dietrich, Kristine Karstens
 #' @seealso
-#' \code{\link{readSource}}, \code{\link{getCalculations}}, \code{\link{calcOutput}}
+#' \code{\link[madrat]{readSource}}, \code{\link[madrat]{getCalculations}}, \code{\link[madrat]{calcOutput}}
 #' @examples
 #' \dontrun{
 #' retrieveData("VALIDATION")

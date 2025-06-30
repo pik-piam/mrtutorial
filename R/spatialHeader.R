@@ -8,7 +8,7 @@
 #' data.frame.
 #' @return A vector with 59199 elements
 #' @author Jan Philipp Dietrich
-#' @seealso \code{\link{regionscode}}
+#' @seealso \code{\link[madrat]{regionscode}}
 #' @examples
 #' \dontrun{
 #' spatialHeader("regionmappingMAgPIE.csv")

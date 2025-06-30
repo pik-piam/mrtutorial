@@ -16,7 +16,7 @@ Download WDI (World development indicators) data .rda file.
 
 }
 \seealso{
-\code{\link{downloadSource}} \code{\link{WDI}}
+\code{\link[madrat]{downloadSource}} \code{\link[WDI]{WDI}}
 }
 \author{
 David Chen
